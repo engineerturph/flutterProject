@@ -5,15 +5,16 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blueGrey[900],
+        backgroundColor: Colors.blueGrey[800],
         appBar: AppBar(
-          title: Text("Diamonds"),
+          backgroundColor: Colors.amber[700],
+          title: Text('Fatih Terim'),
           centerTitle: true,
-          backgroundColor: Colors.brown[600],
         ),
         body: Center(
           child: Image(
-            image: AssetImage('images/diamond.png'),
+            image: NetworkImage(
+                'https://i20.haber7.net/resize/1280x720//haber/haber7/photos/2021/20/terimden_salih_ucana_biraz_bekle_1621586588_0471.jpg'),
           ),
         ),
       ),
